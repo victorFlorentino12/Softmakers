@@ -6,7 +6,7 @@ import SideMenu from './components/SideMenu/SideMenu'
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <div>
         <SideMenu/>
       </div>
