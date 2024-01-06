@@ -1,0 +1,52 @@
+:root {
+    --main-background-color: #363636;
+    --text-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+}
+  
+body {
+    font-size: 1.2em;
+}
+
+.user_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--main-background-color);
+    padding: 10px;
+    color: var(--text-color);
+    gap: 20px;
+}
+  
+.user_icon {
+    color: var(--text-color);
+    display: flex;
+    cursor: pointer;
+}
+
+.submenu {
+    width: 20%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--main-background-color);
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.submenu li {
+    border-top: 1px solid var(--text-color);
+    padding: 5px;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+/* Tirar a borda do primeiro elemento */
+.submenu li:first-child {
+    border-top: none;
+}
