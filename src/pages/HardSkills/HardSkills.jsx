@@ -1,8 +1,11 @@
+import SideMenu from '../../components/SideMenu/SideMenu'
 import styles from './HardSkills.module.css'
 
 const HardSkills = () => {
   return (
-    <div>HardSkills</div>
+    <div>
+      <SideMenu/>
+    </div>
   )
 }
 
