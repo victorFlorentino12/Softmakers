@@ -1,12 +1,13 @@
-import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import Login from './pages/Login/Login'
-import Header from './components/Header/Header'
-import SideMenu from './components/SideMenu/SideMenu'
 import { AuthProvider } from './context/AuthProvider'
 import { ProtectedLayout } from './components/ProtectedLayout'
 import Home from './pages/Home/Home'
+import HardSkills from './pages/HardSkills/HardSkills'
+import Library from './pages/Library/Library'
+import SoftSkills from './pages/SoftSkill/SoftSkills'
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Routes>
           <Route path='/home/:idUser' element={<ProtectedLayout><Home/></ProtectedLayout>}></Route>
           <Route path='/' element={<Login/>}/>
-          
+          <Route path='/hardskills/:idUser' element={<ProtectedLayout><HardSkills/></ProtectedLayout>}></Route>
+          <Route path='/library/:idUser' element={<ProtectedLayout><Library/></ProtectedLayout>}></Route>
+          <Route path='/softskills/:idUser' element={<ProtectedLayout><SoftSkills/></ProtectedLayout>}></Route>
         </Routes>
       </BrowserRouter>
     </AuthProvider>

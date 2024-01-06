@@ -5,14 +5,27 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./SideMenu.module.css"
 import { useState } from "react";
+import { useAuth } from '../../context/AuthProvider/useAuth';
+import { useNavigate } from 'react-router-dom';
 
 const SideMenu = ({children}) => {
+
+  const auth = useAuth();
+  const navigate = useNavigate()
+  const handleLogout = async () => {
+    try {
+      await auth.logout(); // Invoca a função logout corretamente
+      navigate('/')
+    } catch (error) {
+      console.error('Erro ao fazer logout:', error);
+    }
+  };
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const menuItem = [
     {
-      path:"/",
+      path:"/home/76",
       name: "Home",
       icon:<FaHouse />
     },
@@ -27,22 +40,22 @@ const SideMenu = ({children}) => {
       icon: <FaEnvelope />
     },
     {
-      path:"/softskills",
+      path:"/softskills/76",
       name: "SoftSkills",
       icon: <FaHandshake />
     },
     {
-      path:"/hardskills",
+      path:"/hardskills/76",
       name: "HardSkills",
       icon: <FaScrewdriverWrench />
     },
     {
-      path:"/library",
+      path:"/library/76",
       name: "Biblioteca",
       icon: <FaBook />
     },
     {
-      path:"/logout",
+      path:"/",
       name: "Sair",
       icon: <FaRightFromBracket />
     }
@@ -61,7 +74,8 @@ const SideMenu = ({children}) => {
           </div>
          {
           menuItem.map((item, index)=>(
-            <NavLink to={item.path} key={index} className={styles.link} activeclassName={styles.active}>
+            <NavLink to={item.path} key={index} className={styles.link} activeclassName={styles.active} onClick={item.name === 'Sair' ? handleLogout : null}>
+              
               <div className={styles.icon}>{item.icon}</div>
               <div style={{display: isOpen ? "block" : "none"}} className={styles.link_text}>{item.name}</div>
             </NavLink>

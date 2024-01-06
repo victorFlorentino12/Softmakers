@@ -121,7 +121,7 @@
     
 }   
 .input:focus + .focus_input::after{
-    top: -15px;
+    top: -17px;
     
 }
 .input:focus + .focus_input::before{
@@ -129,5 +129,5 @@
     
 }
 .has_val + .focus_input::after{
-    top: -15px;
+    top: -17px;
 }

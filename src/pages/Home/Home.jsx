@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuth } from '../../context/AuthProvider/useAuth';
 import styles from './Home.module.css';
 import { useNavigate } from 'react-router-dom';
+import SideMenu from '../../components/SideMenu/SideMenu';
 
 const Home = () => {
   const auth = useAuth();
@@ -17,6 +18,7 @@ const Home = () => {
 
   return (
     <div>
+      <SideMenu/>
       <p>Bem-vindo à Página Inicial</p>
       <button onClick={handleLogout}>Logout</button>
     </div>
