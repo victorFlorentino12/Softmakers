@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.12.4",
+    "axios": "^1.6.3",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
@@ -26,6 +28,11 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+<<<<<<< HEAD
     "vite": "^5.0.11"
+=======
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+>>>>>>> 167dcc1ef3af7a7de5995444d0f8ead3ed055045
   }
 }
