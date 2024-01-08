@@ -1,6 +1,6 @@
 :root {
-    --main-background-color: #363636;
-    --text-color: #fff;
+    --main-background-color: #ffff;
+    --text-color: #000000;
     --box-shadow-color: rgba(0, 0, 0, 0.2);
 }
   
@@ -44,6 +44,11 @@ body {
     cursor: pointer;
     width: 100%;
     text-align: center;
+    
+}
+.link{
+    text-decoration: none;
+    color: black;
 }
 
 /* Tirar a borda do primeiro elemento */

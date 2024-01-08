@@ -1,6 +1,8 @@
 .menu_container {
   height: 100vh;
   background-color: #04070c;
+  position:fixed;
+  top: 0;
 }
 
 .main {

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css'
 import { FaBell, FaUserCircle} from "react-icons/fa"
-import Logo from "./Logo"; 
 import UserMenu from './UserMenu';
 
 
@@ -19,6 +18,7 @@ const Header = () => {
 
         if (data.data && data.data.first_name) {
           setFirstName(data.data.first_name);
+          
         }
         //Aqui tem que alterar pro cargo, coloquei só pra testar
         if (data.data && data.data.last_name) {
@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header>
       <div className={styles.header_logo}>
-        <Logo/>
+     
       </div>
       <div className={styles.header_login}>
           <UserMenu />

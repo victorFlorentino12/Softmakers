@@ -8,6 +8,7 @@
     height: 100vh;
 }
 .apresentation{
+    margin-left: 100px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -17,20 +18,22 @@
 }
 
 .logo_apresentation{
-    max-width: 200px;
+    max-width: 150px;
     margin-bottom: 20px;
 }
 .txt_apresentation{
+    font-size: 27px;
     color: #3C5E92;
     font-weight: 300;
 }
 .txt_apresentation_strong{
+    font-size: 27px;
     color: #3C5E92;
     font-weight: 1000;
 }
 .img_apresentation{
     margin-top: 20px;
-    max-width:300px;
+    max-width:190px;
 }
 .container_login{
     margin-top: auto;
@@ -42,22 +45,23 @@
     width: 100%;
 }
 .login_form{
-    width: 500px;
+    width: 350px;
     background-color: #3C5E9B;
     color: white;
     border-radius: 15px;
     padding: 15px;
-    height:550px;
+    height:400px;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+  
 }
 .login_from_title{
     text-align: center;
     width: 100%; 
     margin-bottom: 30px; 
-    font-size: 27px;   
+    font-size: 18px;   
 }
 .wrap_input{
     width: 80%;
@@ -130,4 +134,18 @@
 }
 .has_val + .focus_input::after{
     top: -17px;
+}
+
+@media (max-width:830px){
+    .apresentation{
+        display: none;
+    }
+    .container_login{
+        width: 100%;
+     
+    }
+    .login_form{
+        margin: auto;
+        
+    }
 }
