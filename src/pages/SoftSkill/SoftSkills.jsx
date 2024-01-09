@@ -1,6 +1,7 @@
 import styles from './SoftSkills.module.css'
 import SideMenu from '../../components/SideMenu/SideMenu'
 import Header from '../../components/Header/Header'
+import { Link } from 'react-router-dom'
 
 const SoftSkills = () => {
   return (
@@ -13,7 +14,7 @@ const SoftSkills = () => {
         <div className={styles.transparent} ></div>
 
         <div className={styles.test}>
-
+      <Link to={'/course/76'}><button>curso</button></Link>
         </div>
       </div>
      

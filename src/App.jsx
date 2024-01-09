@@ -7,6 +7,7 @@ import Home from './pages/Home/Home'
 import HardSkills from './pages/HardSkills/HardSkills'
 import Library from './pages/Library/Library'
 import SoftSkills from './pages/SoftSkill/SoftSkills'
+import Course from './pages/Course/Course'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/hardskills/:idUser' element={<ProtectedLayout><HardSkills/></ProtectedLayout>}></Route>
           <Route path='/library/:idUser' element={<ProtectedLayout><Library/></ProtectedLayout>}></Route>
           <Route path='/softskills/:idUser' element={<ProtectedLayout><SoftSkills/></ProtectedLayout>}></Route>
+          <Route path='/course/:idUser' element={<ProtectedLayout><Course/></ProtectedLayout>}></Route>
         </Routes>
       </BrowserRouter>
     </AuthProvider>
