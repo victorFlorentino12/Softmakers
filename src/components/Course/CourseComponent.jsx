@@ -4,6 +4,10 @@ import { useParams } from 'react-router-dom';
 import { pdfjs } from 'react-pdf';
 import styles from './CourseComponent.module.css'
 import arrow from '../../assets/arrow.svg'
+import completed from '../../assets/completed.svg'
+import clock from '../../assets/clock.svg'
+
+
 
 import pdfTest from '../../assets/Victor_Florentino_Curriculo.pdf';
 
@@ -20,30 +24,31 @@ const coursesData = [
         title: 'Introdução ao React',
         type: 'video',
         url: 'https://www.youtube.com/embed/hd2B7XQAFls', 
+        completed:true
       },
       {
         id: 2,
         title: 'Componentes em React',
         type: 'video',
         url: 'https://www.youtube.com/embed/aJR7f45dBNs', 
+        completed:true
       },
       {
         id: 3,
         title: 'State e Props',
         type: 'pdf',
         url: pdfTest,
+        completed:false
       },
     ],
   },
- 
 ];
 
 function CourseComponent() {
   const { idUser } = useParams();
   const id = parseInt(idUser);
   console.log(id);
-  const [visibleLessons, setVisibleLessons] = useState([]);
-  const [currentLesson, setCurrentLesson] = useState(0);
+  const [visibleLesson, setVisibleLesson] = useState(null);
 
   const course = coursesData.find((course) => course.id === id);
 
@@ -52,29 +57,21 @@ function CourseComponent() {
   }
 
   const handleLessonChange = (index) => {
-    setCurrentLesson(index);
-    toggleLessonVisibility(index);
+    setVisibleLesson(index);
   };
 
-  const toggleLessonVisibility = (index) => {
-    setVisibleLessons((prevVisibleLessons) => {
-      const updatedVisibleLessons = [...prevVisibleLessons];
-      updatedVisibleLessons[index] = !updatedVisibleLessons[index];
-      return updatedVisibleLessons;
-    });
-  };
-
-  const renderContent = () => {
-    const currentType = course.lessons[currentLesson].type;
+  const renderContent = (index) => {
+    const currentType = course.lessons[index].type;
 
     if (currentType === 'video') {
       return (
         <div>
-          <h3>Vídeo da Aula: {course.lessons[currentLesson].title}</h3>
+          <h3>Vídeo da Aula: {course.lessons[index].title}</h3>
           <iframe
-            width="560"
+            className={styles.video}
+            width="100%"
             height="315"
-            src={course.lessons[currentLesson].url}
+            src={course.lessons[index].url}
             title="Reprodutor de Vídeo"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -85,10 +82,10 @@ function CourseComponent() {
     } else if (currentType === 'pdf') {
       return (
         <div>
-          <h3>Conteúdo da Aula: {course.lessons[currentLesson].title}</h3>
+          <h3>Conteúdo da Aula: {course.lessons[index].title}</h3>
           <a
             href={pdfTest}  
-            download={`Aula_${currentLesson + 1}_${course.lessons[currentLesson].title}.pdf`}
+            download={`Aula_${index + 1}_${course.lessons[index].title}.pdf`}
           >
             Baixar PDF
           </a>
@@ -108,11 +105,12 @@ function CourseComponent() {
         {course.lessons.map((lesson, index) => (
           <li key={lesson.id} onClick={() => handleLessonChange(index)}>
             <section className={styles.section_course}>
-              <div className={styles.course_title}>
+              <div className={styles.course_title} >
                 {lesson.title}
-                <img src={arrow} alt="arrow-course" className={styles.course_arrow} /> 
+                <img src={arrow} alt="arrow-course" className={styles.course_arrow} />
+                {(lesson.completed === true) ? <img src={completed} className={styles.status}/> : <img src={clock} className={styles.status} />} 
               </div>
-              <div className={styles.course_class}>{visibleLessons[index] && renderContent()}</div>          
+              <div className={styles.course_class}>{visibleLesson === index && renderContent(index)}</div>          
             </section>
           </li>
         ))}

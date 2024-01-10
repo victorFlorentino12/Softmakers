@@ -6,7 +6,7 @@
 }
 li{
     list-style: none;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .course_title{
     width: 50vw;
@@ -16,6 +16,8 @@ li{
     border-radius: 7px;
     transition: 0.5s;
     position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .course_arrow{
     position: absolute;
@@ -26,6 +28,11 @@ li{
 .course_arrow:hover{
     transform: translateY(3px);
 }
+.status{
+    position: absolute;
+    max-width: 25px;
+    margin-left: 15px;
+}
 
 .course_div_main{
     width: 100%;
@@ -33,4 +40,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.video{
+    margin-top: 20px;
 }
