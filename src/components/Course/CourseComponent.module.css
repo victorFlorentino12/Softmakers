@@ -1,0 +1,36 @@
+.section_course{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    margin-bottom: 50px;
+}
+.course_title{
+    width: 50vw;
+    background-color: #141923;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 7px;
+    transition: 0.5s;
+    position: relative;
+}
+.course_arrow{
+    position: absolute;
+    max-width: 25px;
+    right: 20px;
+    transition: 0.4s;
+}
+.course_arrow:hover{
+    transform: translateY(3px);
+}
+
+.course_div_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

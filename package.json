@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-pdf-viewer/core": "^3.11.00",
     "antd": "^5.12.4",
     "axios": "^1.6.3",
     "localforage": "^1.10.0",
