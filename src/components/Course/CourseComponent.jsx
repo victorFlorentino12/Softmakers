@@ -13,11 +13,42 @@ import pdfTest from '../../assets/Victor_Florentino_Curriculo.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfTest;
 
-const coursesData = [
+ export const coursesData = [
+  {
+    id: 74,
+    title: 'Curso de React',
+    description: 'Aprenda React do básico ao avançado.',
+    completed:false,
+    lessons: [
+      {
+        id: 1,
+        title: 'Introdução ao React',
+        type: 'video',
+        url: 'https://www.youtube.com/embed/hd2B7XQAFls', 
+        completed:true
+      },
+      {
+        id: 2,
+        title: 'Componentes em React',
+        type: 'video',
+        url: 'https://www.youtube.com/embed/aJR7f45dBNs', 
+        completed:true
+      },
+      {
+        id: 3,
+        title: 'State e Props',
+        type: 'pdf',
+        url: pdfTest,
+        completed:false
+      },
+    ],
+  },
+
   {
     id: 76,
     title: 'Curso de React',
     description: 'Aprenda React do básico ao avançado.',
+    completed:false,
     lessons: [
       {
         id: 1,

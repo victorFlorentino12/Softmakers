@@ -1,12 +1,4 @@
-.section_home{
-    height: 1000px;
-}
-.test{
-    margin-top: 200px;
-    height: 500px;
-    width: 600px;
-    background-color: black;
-}
+
 .container_home{
     display: flex;
 }
@@ -14,4 +6,79 @@
     height: 100vh;
     width: 73px;
     background-color:transparent;
+}
+.main{
+    width: 100%;
+}
+.container_trilha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+   background-color: #141923;
+    color: white;
+  }
+  .title_main{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+.status_trilha_container{
+    position: absolute;
+}
+.trilha{
+   width: 700px;
+}
+.status_trilha{
+    position: absolute;
+    top: -115px;
+    left: 48px;
+max-width:50px;
+}
+.title_1{
+    position: relative;
+    top:78px;
+    left: 25px;
+}
+.title_2{
+    position: relative;
+    top:54px;
+    left: 178px;
+}
+.title_3{
+    position: relative;
+    top:30px;
+    left: 330px;
+}
+.title_4{
+    position: relative;
+    top:7px;
+    left: 480px;
+}
+.title_5{
+    position: relative;
+    top:-7px;
+    left: 580px;
+}
+.title_6{
+    position: relative;
+    top:-30px;
+    left: 110px;
+}
+.title_7{
+    position: relative;
+    top:-54px;
+    left: 264px;
+}
+.title_8{
+    position: relative;
+    top:-78px;
+    left: 425px;
+}
+.status_trilhs_img{
+    position: relative;
+    top:-210px;
+    left: 50px;
+    max-width: 50px;
+
 }
