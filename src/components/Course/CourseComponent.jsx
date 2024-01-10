@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import '@react-pdf-viewer/core/lib/styles/index.css';
+
 import { pdfjs } from 'react-pdf';
 import styles from './CourseComponent.module.css'
 import arrow from '../../assets/arrow.svg'
