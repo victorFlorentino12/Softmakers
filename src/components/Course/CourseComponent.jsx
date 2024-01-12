@@ -9,13 +9,13 @@ import clock from '../../assets/clock.svg'
 
 
 
-import pdfTest from '../../assets/Victor_Florentino_Curriculo.pdf';
+import pdfTest from '../../assets/universidade 2.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfTest;
 
  export const coursesData = [
   {
-    id: 74,
+    id: 2,
     title: 'Curso de React',
     description: 'Aprenda React do básico ao avançado.',
     completed:false,
@@ -45,30 +45,37 @@ pdfjs.GlobalWorkerOptions.workerSrc = pdfTest;
   },
 
   {
-    id: 76,
-    title: 'Curso de React',
-    description: 'Aprenda React do básico ao avançado.',
+    id: 1,
+    title: 'Curso de Comunicação',
+    description: 'Aprenda se comunicar melhor.',
     completed:false,
     lessons: [
       {
         id: 1,
-        title: 'Introdução ao React',
+        title: 'Introdução ao Curso de Oratória',
         type: 'video',
-        url: 'https://www.youtube.com/embed/hd2B7XQAFls', 
+        url: 'https://www.youtube.com/embed?v=dzRjOnJ0Ndw', 
         completed:true
       },
       {
         id: 2,
-        title: 'Componentes em React',
+        title: 'As estratégias para uma Oratória de Alta Performance ',
         type: 'video',
-        url: 'https://www.youtube.com/embed/aJR7f45dBNs', 
+        url: 'https://www.youtube.com/embed?v=OSMFX8Tqy_o', 
         completed:true
       },
       {
         id: 3,
-        title: 'State e Props',
+        title: 'Como se Comunicar melhor',
         type: 'pdf',
         url: pdfTest,
+        completed:false
+      },
+      {
+        id: 4,
+        title: 'Curso de Comunicação nâo violenta',
+        type: 'video',
+        url: 'https://www.youtube.com/embed?v=uofE9CnWDYU', 
         completed:false
       },
     ],

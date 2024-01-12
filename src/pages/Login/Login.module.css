@@ -18,22 +18,22 @@
 }
 
 .logo_apresentation{
-    max-width: 150px;
+    max-width: 180px;
     margin-bottom: 20px;
 }
 .txt_apresentation{
-    font-size: 27px;
+    font-size: 29px;
     color: #3C5E92;
     font-weight: 300;
 }
 .txt_apresentation_strong{
-    font-size: 27px;
+    font-size: 29px;
     color: #3C5E92;
     font-weight: 1000;
 }
 .img_apresentation{
     margin-top: 20px;
-    max-width:190px;
+    max-width:210px;
 }
 .container_login{
     margin-top: auto;
@@ -45,12 +45,12 @@
     width: 100%;
 }
 .login_form{
-    width: 350px;
+    width: 400px;
     background-color: #3C5E9B;
     color: white;
     border-radius: 15px;
     padding: 15px;
-    height:400px;
+    height:450px;
    display: flex;
    flex-direction: column;
    align-items: center;

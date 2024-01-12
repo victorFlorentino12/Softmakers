@@ -2,6 +2,8 @@ import styles from './SoftSkills.module.css'
 import SideMenu from '../../components/SideMenu/SideMenu'
 import Header from '../../components/Header/Header'
 import { Link } from 'react-router-dom'
+import TrailsStarted from '../../components/TrailsStarted/TrailsStarted'
+
 
 const SoftSkills = () => {
   return (
@@ -13,9 +15,11 @@ const SoftSkills = () => {
 
         <div className={styles.transparent} ></div>
 
-        <div className={styles.test}>
-      <Link to={'/course/76'}><button>curso</button></Link>
+        <div className={styles.main_soft}> 
+        <TrailsStarted padding={'3px 7px'} to={'/course/1'}/>
+          
         </div>
+       
       </div>
      
     </section>

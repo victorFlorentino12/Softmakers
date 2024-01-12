@@ -5,6 +5,7 @@ button{
     transition: 0.5s;
     font-size: 15px;
     font-weight: 700;
+    
 }
 button:hover{
     transform: translateY(-5px);

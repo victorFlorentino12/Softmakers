@@ -1,6 +1,7 @@
 
 .container_home{
     display: flex;
+    overflow-x: hidden;
 }
 .transparent{
     height: 100vh;
@@ -30,17 +31,19 @@
 .trilha{
    width: 700px;
 }
-.status_trilha{
-    position: absolute;
-    top: -115px;
-    left: 48px;
-max-width:50px;
+.status_trilhas_img{
+    position: relative;
+    top: -233px;
+    left: 51px;
+    max-width:50px;
 }
+
 .title_1{
     position: relative;
-    top:78px;
+    top:82px;
     left: 25px;
 }
+
 .title_2{
     position: relative;
     top:54px;
@@ -48,22 +51,22 @@ max-width:50px;
 }
 .title_3{
     position: relative;
-    top:30px;
+    top:26px;
     left: 330px;
 }
 .title_4{
     position: relative;
-    top:7px;
+    top:-3px;
     left: 480px;
 }
 .title_5{
     position: relative;
-    top:-7px;
+    top:5px;
     left: 580px;
 }
 .title_6{
     position: relative;
-    top:-30px;
+    top:-26px;
     left: 110px;
 }
 .title_7{
@@ -73,7 +76,7 @@ max-width:50px;
 }
 .title_8{
     position: relative;
-    top:-78px;
+    top:-82px;
     left: 425px;
 }
 .status_trilhs_img{
@@ -82,4 +85,11 @@ max-width:50px;
     left: 50px;
     max-width: 50px;
 
+}
+.card_container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

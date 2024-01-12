@@ -1,11 +1,9 @@
-.section_soft_skills{
-    height: 1000px;
-}
-.test{
-    margin-top: 200px;
-    height: 500px;
-    width: 600px;
-    background-color: black;
+
+
+.main_soft{
+    height: 100vh;
+    background-color:#F2F2F2 ;
+    overflow-x: hidden;
 }
 .container_soft_skills{
     display: flex;

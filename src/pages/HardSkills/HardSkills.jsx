@@ -1,6 +1,8 @@
 import SideMenu from '../../components/SideMenu/SideMenu'
 import styles from './HardSkills.module.css'
 import Header from '../../components/Header/Header'
+import TrailsStarted from '../../components/TrailsStarted/TrailsStarted'
+
 
 const HardSkills = () => {
   return (
@@ -11,8 +13,8 @@ const HardSkills = () => {
 
         <div className={styles.transparent} ></div>
 
-        <div className={styles.test}>
-
+        <div className={styles.main_hard}>
+          <TrailsStarted padding={'3px 7px'} to={'/course/2'}/>
         </div>
       </div>
      

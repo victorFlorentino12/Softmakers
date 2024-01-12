@@ -5,6 +5,7 @@ import trilha_img from '../../assets/trilha.svg'
 import { coursesData } from '../../components/Course/CourseComponent';
 import completed_img from '../../assets/completed.svg'
 import clock_img from '../../assets/clock.svg'
+import TypeCard from '../../components/Card/TypeCard';
 
 const Home = () => {
   return (
@@ -28,10 +29,15 @@ const Home = () => {
               <h4 className={styles.title_6}>Tilha React</h4>
               <h4 className={styles.title_7}>Tilha React</h4>
               <h4 className={styles.title_8}>Tilha React</h4>
-              <img src={completed_img} className={styles.status_trilhs_img}/>
+              <img src={completed_img} className={styles.status_trilhas_img}/>
             </div>
+            
           </div>
-
+          <div className={styles.card_container}>
+            <TypeCard text={'SOFT SKILLS'} to={'/softskills/76'}/>
+            <TypeCard text={'HARD SKILLS'} to={'/hardskills/76'}/>
+          </div>
+       
         </div>
 
   
