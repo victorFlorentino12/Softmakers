@@ -10,6 +10,7 @@ import clock from '../../assets/clock.svg'
 
 
 import pdfTest from '../../assets/universidade 2.pdf';
+import Button from '../Button/Button';
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfTest;
 
@@ -78,6 +79,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = pdfTest;
         url: 'https://www.youtube.com/embed?v=uofE9CnWDYU', 
         completed:false
       },
+      {
+        id: 5,
+        title: 'Curso Recomendado',
+        type: 'link',
+        url: 'https://www.alura.com.br/', 
+        completed:false
+      },
     ],
   },
 ];
@@ -126,6 +134,19 @@ function CourseComponent() {
             download={`Aula_${index + 1}_${course.lessons[index].title}.pdf`}
           >
             Baixar PDF
+          </a>
+        </div>
+      );
+    }
+    else if (currentType === 'link') {
+      return (
+        <div>
+          <h3>Conteúdo da Aula: {course.lessons[index].title}</h3>
+          <a
+            href={course.lessons[index].url}  
+            target='blank'
+          >
+            <Button text={'Vá para o Link'} padding={'4px 7px'} background={'#3C5E9B'} color={'#fff'}/>
           </a>
         </div>
       );
