@@ -14,7 +14,7 @@ const HardSkills = () => {
         <div className={styles.transparent} ></div>
 
         <div className={styles.main_hard}>
-          <TrailsStarted padding={'3px 7px'} to={'/course/2'}/>
+          <TrailsStarted padding={'3px 7px'} to={'/course/2'} background={'#3C5E9B'} color={'#fff'}/>
         </div>
       </div>
      

@@ -16,7 +16,7 @@ const SoftSkills = () => {
         <div className={styles.transparent} ></div>
 
         <div className={styles.main_soft}> 
-        <TrailsStarted padding={'3px 7px'} to={'/course/1'}/>
+        <TrailsStarted padding={'3px 7px'} to={'/course/1'} background={'#3C5E9B'} color={'#fff'}/>
           
         </div>
        
