@@ -1,5 +1,5 @@
 # Softmaker
-![image](https://github.com/victorFlorentino12/Softmakers/assets/140027327/76bd8284-07d9-47a6-8b8c-3fb72709c6ce)
+![image](https://github.com/victorFlorentino12/Softmakers/assets/140027327/d1c14c19-affc-47aa-9675-6259d8605f69)
 ## To sign in
  email: eve.holt@reqres.in
  password: cityslicka
