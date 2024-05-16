@@ -1,8 +1,9 @@
 # Softmaker
-
+![image](https://github.com/victorFlorentino12/Softmakers/assets/140027327/76bd8284-07d9-47a6-8b8c-3fb72709c6ce)
 ## To sign in
  email: eve.holt@reqres.in
  password: cityslicka
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
